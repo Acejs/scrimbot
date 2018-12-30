@@ -1,7 +1,6 @@
 {
-  "name": "mrsnipebot",
+  "name": "bot",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,9 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
-    "dotenv": "^6.2.0"
-  }
+    "save": "^2.3.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
