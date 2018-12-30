@@ -4,7 +4,7 @@ const settings = require('./settings.json');
 const fs = require('fs');
 require('dotenv/config');
 const http = require('http');
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 // This is a simple server
 http.createServer().listen(port);
 
@@ -15,7 +15,7 @@ bot.commands = new Discord.Collection();
 
 // import bot setting (data)
 const prefix = settings.prefix;
-const token = process.env.token;
+const token = process.env.TOKEN;
 const owner = settings.owner;
 
 //read commands files
