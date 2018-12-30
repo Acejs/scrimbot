@@ -27,10 +27,10 @@ module.exports.run = async (bot, message, args) => {
     let editLast3 = null;
 
     let startMessage = new Discord.RichEmbed()
-        .setTitle("Fortnite Scrims")
-        .setDescription("Please write the last 3 codes from you're server id")
+        .setTitle("Fortsnipe Scrims")
+        .setDescription("Waiting for server IDs...")
         .setColor("#8600b3")
-        .setFooter("friedclam");
+        .setFooter("Please enter the last 3 characters of your server identifier located in the top left corner of your screen while in-game.");
 
     message.channel.send({embed: startMessage});
 
@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
     let timeEmbed = new Discord.RichEmbed()
         .setTitle("Next match in approx...")
         .setDescription(time + " minutes")
-        .setColor("#8600b3");
+        .setColor("#FF3333");
 
     setTimeout(async () => {
         editTime = await message.channel.send({embed: timeEmbed}).catch( (err) => {
@@ -66,8 +66,8 @@ module.exports.run = async (bot, message, args) => {
     },60000);
 
     let last3 = new Discord.RichEmbed()
-        .setTitle("Last 3 code")
-        .setColor("#8600b3");
+        .setTitle("Current Servers")
+        .setColor("#33FFC1");
 
     setTimeout(async () => {
         editLast3 = await message.channel.send({embed: last3});
@@ -110,8 +110,8 @@ module.exports.run = async (bot, message, args) => {
 
         let str = "";
         last3 = new Discord.RichEmbed()
-            .setTitle("Last 3 code")
-            .setColor("#8600b3");
+            .setTitle("Waiting for server ID's.....")
+            .setColor("#00FFD8");
 
         for (var i = 0; i < game.data.length; i++){
             str = "";
