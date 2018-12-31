@@ -66,7 +66,7 @@ module.exports.run = async (bot, message, args) => {
     },60000);
 
     let last3 = new Discord.RichEmbed()
-        .setTitle("Current Servers")
+        .setTitle("Waiting for server ID's.....")
         .setColor("#33FFC1");
 
     setTimeout(async () => {
@@ -110,7 +110,7 @@ module.exports.run = async (bot, message, args) => {
 
         let str = "";
         last3 = new Discord.RichEmbed()
-            .setTitle("Waiting for server ID's.....")
+            .setTitle("Current Servers")
             .setColor("#00FFD8");
 
         for (var i = 0; i < game.data.length; i++){
