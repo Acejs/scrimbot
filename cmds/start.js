@@ -42,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
 Alert:
 - A snipe match is starting, pay attention!
 Instructions:
-- We will do a countdown from 3 sec and you will ready up on go.M")
+- We will do a countdown from 3 sec and you will ready up on go.")
         .setColor("#FF3333");
 
     setTimeout(async () => {
