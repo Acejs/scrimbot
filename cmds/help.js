@@ -1,6 +1,11 @@
-
+const Discord = require("Discord.js");
 module.exports.run = async (bot,message,args) => {
-    message.channel.send("test message");
+
+    let embed = new Discord.RichEmbed()
+    .setColor("#C0C0C0")
+    .setTitle("Green");
+    message.channel.send(embed)
+    message.channel.send("test")
 }
 
 
