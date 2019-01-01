@@ -110,7 +110,7 @@ module.exports.run = async (bot, message, args) => {
 
         let str = "";
         last3 = new Discord.RichEmbed()
-            .setTitle("Current Servers")
+            .setTitle("Current Servers: ")
             .setColor("#00FFD8");
 
         for (var i = 0; i < game.data.length; i++){
