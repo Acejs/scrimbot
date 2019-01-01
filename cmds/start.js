@@ -41,7 +41,7 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("SNIPE MATCH STARTING!");
         .setColor("#FF3333");
         .setFooter("Alert: - A snipe match is starting, pay attention!");
-        .setFooter("Instructions: - We will do a countdown from 5 sec and you will ready up on go.");
+        .setFooter("Instructions: - We will do a countdown from 7 sec and you will ready up on go.");
 
     setTimeout(async () => {
         editTime = await message.channel.send({embed: timeEmbed}).catch( (err) => {
