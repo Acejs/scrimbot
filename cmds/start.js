@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
     let timeEmbed = new Discord.RichEmbed()
         .setTitle("SNIPE MATCH STARTING!");
         .setColor("#FF3333");
-        .setFooter("Alert: - A snipe match is starting, pay attention!");
+        .setHeader("Alert: - A snipe match is starting, pay attention!");
         .setFooter("Instructions: - We will do a countdown from 7 sec and you will ready up on go.");
 
     setTimeout(async () => {
