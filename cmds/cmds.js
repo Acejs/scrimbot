@@ -11,7 +11,7 @@ let sicon = message.guild.iconURL;
     .addField("^60s", "Sends a message (Next scrim in 1 miniutes!)" )
     .addField("^30s", "Sends a message (Next scrim in 30 seconds!)")
     .addField("^now", "Sends a message (Scrims starting now!")
-    .setFooter("DieselGaming67™")
+    .setFooter("By Not Ace#8905™")
     .setColor("#c0c0c0");
 
     message.member.send(cmdsembed);
